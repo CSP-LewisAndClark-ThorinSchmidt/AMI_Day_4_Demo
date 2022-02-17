@@ -1,6 +1,6 @@
 # Frame1.py
-# Thorin Schmidt
-# 02/16/22
+# Luke Patton & Jacob Kiefer
+# 02/17/22
 
 '''
 Frame Example
@@ -23,9 +23,15 @@ class Frame1(tk.Frame):
     """ Create a label, and a button that changes the frame. """
     
     # create the label
-    msg = "Welcome to Frame 1!"
+    msg = "Enter your Login!"
     self.lblOne = tk.Label(self, text = msg)
     self.lblOne.pack()
-    self.btnOne = tk.Button(self, text = "Go to Frame 2", 
-                             command = self.master.change_to_2)
+    self.lbl2 = tk.Entry(self, text = msg)
+    self.lbl2.pack()
+    self.btnOne = tk.Button(self, text = "Login",  command = self.master.change_to_2)
     self.btnOne.pack()
+    rightpassword = "pa$$word"
+    if self.lbl2 == rightpassword :
+      command = self.master.change_to_2.get
+    else:
+      print("wrong passsword")
