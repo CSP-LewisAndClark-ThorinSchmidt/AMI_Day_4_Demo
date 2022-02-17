@@ -1,6 +1,6 @@
 # main.py
-# Thorin Schmidt
-# 02/01/22
+# Luke Patton & Jacob Kiefer
+# 02/17/22
 
 '''
 My Awesome App

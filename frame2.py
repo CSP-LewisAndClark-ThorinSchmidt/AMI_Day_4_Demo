@@ -1,6 +1,6 @@
-# frame2.py
-# Thorin Schmidt
-# 02/16/22
+# Frame2.py
+# Luke Patton & Jacob Kiefer
+# 02/17/22
 
 '''
 Frame Example
@@ -23,7 +23,7 @@ class Frame2(tk.Frame):
     """ Create a label, and a button that changes the frame. """
     
     # create the label
-    msg = "Welcome to Frame 2!"
+    msg = "Welcome!"
     self.lblOne = tk.Label(self, text = msg)
     self.lblOne.pack()
     self.btnOne = tk.Button(self, text = "Go To Frame 1", 
